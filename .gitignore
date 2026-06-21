@@ -1,0 +1,30 @@
+# Python
+backend/venv/
+__pycache__/
+*.pyc
+
+# Large datasets - not needed in repo
+data/wlasl/
+data/ASL_Citizen/
+data/ASL_Citizen.zip
+data/wlasl.zip
+
+# Debug/temp files
+backend/test_*.jpg
+backend/*_check.jpg
+backend/backend_log.txt
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment secrets - NEVER push real API keys
+backend/.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+WLASL/
+data/gestures/medical_landmarks.npy
