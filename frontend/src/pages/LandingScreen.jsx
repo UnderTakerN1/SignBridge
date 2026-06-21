@@ -208,58 +208,58 @@ function LandingScreen() {
 
                 {/* How It Works - Detailed Cards */}
                 <div style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-                  gap: '16px',
-                  marginBottom: '44px',
-                  maxWidth: '780px',
-                  width: '100%',
-                  animation: 'fadeUp 0.6s ease 0.32s both'
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+                    gap: '16px',
+                    marginBottom: '44px',
+                    maxWidth: '780px',
+                    width: '100%',
+                    animation: 'fadeUp 0.6s ease 0.32s both'
                 }}>
-                  {[
-                    {
-                      icon: '👁️',
-                      title: 'Computer Vision',
-                      desc: 'MediaPipe extracts hand landmarks; a custom LSTM model recognizes ASL medical signs from real motion sequences.'
-                    },
-                    {
-                      icon: '🧠',
-                      title: 'Clinical AI',
-                      desc: 'Recognized signs are sent to Infermedica — a real diagnosis & triage engine used by healthcare companies.'
-                    },
-                    {
-                      icon: '💬',
-                      title: 'Plain-Language Summary',
-                      desc: 'Groq (Llama 3.3) turns clinical output into a clear, doctor-ready summary in seconds.'
-                    }
-                  ].map((card) => (
-                    <div key={card.title} style={{
-                      backgroundColor: colors.surfaceLight,
-                      border: `1px solid ${colors.border}`,
-                      borderRadius: '16px',
-                      padding: '24px',
-                      textAlign: 'left'
-                    }}>
-                      <div style={{ fontSize: '1.8rem', marginBottom: '10px' }}>{card.icon}</div>
-                      <div style={{ color: colors.text, fontWeight: '700', fontSize: '1rem', marginBottom: '6px' }}>
-                        {card.title}
-                      </div>
-                      <div style={{ color: colors.textMuted, fontSize: '0.85rem', lineHeight: '1.5' }}>
-                        {card.desc}
-                      </div>
-                    </div>
-                  ))}
+                    {[
+                        {
+                            icon: '👁️',
+                            title: 'Computer Vision',
+                            desc: 'MediaPipe extracts hand landmarks; a custom LSTM model recognizes ASL medical signs from real motion sequences.'
+                        },
+                        {
+                            icon: '🧠',
+                            title: 'Clinical AI',
+                            desc: 'Recognized signs are sent to Infermedica — a real diagnosis & triage engine used by healthcare companies.'
+                        },
+                        {
+                            icon: '💬',
+                            title: 'Plain-Language Summary',
+                            desc: 'Groq (Llama 3.3) turns clinical output into a clear, doctor-ready summary in seconds.'
+                        }
+                    ].map((card) => (
+                        <div key={card.title} style={{
+                            backgroundColor: colors.surfaceLight,
+                            border: `1px solid ${colors.border}`,
+                            borderRadius: '16px',
+                            padding: '24px',
+                            textAlign: 'left'
+                        }}>
+                            <div style={{ fontSize: '1.8rem', marginBottom: '10px' }}>{card.icon}</div>
+                            <div style={{ color: colors.text, fontWeight: '700', fontSize: '1rem', marginBottom: '6px' }}>
+                                {card.title}
+                            </div>
+                            <div style={{ color: colors.textMuted, fontSize: '0.85rem', lineHeight: '1.5' }}>
+                                {card.desc}
+                            </div>
+                        </div>
+                    ))}
                 </div>
 
                 <p style={{
-                  color: colors.textMuted,
-                  fontSize: '0.95rem',
-                  maxWidth: '600px',
-                  marginBottom: '20px',
-                  fontStyle: 'italic',
-                  animation: 'fadeUp 0.6s ease 0.33s both'
+                    color: colors.textMuted,
+                    fontSize: '0.95rem',
+                    maxWidth: '600px',
+                    marginBottom: '20px',
+                    fontStyle: 'italic',
+                    animation: 'fadeUp 0.6s ease 0.33s both'
                 }}>
-                  "Every claim below is validated against real, unseen ASL signers — not just our own testing."
+                    "Every claim below is validated against real, unseen ASL signers — not just our own testing."
                 </p>
 
                 {/* Stats row */}
@@ -349,7 +349,7 @@ function LandingScreen() {
                     </p>
 
                     <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        {['Team Member 1', 'Team Member 2'].map((name) => (
+                        {['Ahmed Reda SAHABI', 'Youssef Figuigui'].map((name) => (
                             <div key={name} style={{
                                 backgroundColor: colors.surfaceLight,
                                 border: `1px solid ${colors.border}`,
